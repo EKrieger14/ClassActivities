@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #3b950a;
+  --secondary-color: #b39cd0;
+  --text-primary-color: #fbeaff;
+  --text-secondary-color: #00c9a7;
+  --text-size: 25px
+}
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ponomar-regular {
+  font-family: "Ponomar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header {
+  background: url(https://plus.unsplash.com/premium_photo-1666432045848-3fdbb2c74531?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-size);
+}
+
+h1 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+header > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 3em;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.flex > * {
+  border: 1px solid;
+}
+
+body > form {
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid black;
+  color: var(--primary-color);
+}
+
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  header {
+    height: 80vh;
+
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: .5rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 550px){
+  header {
+    height: 60vh;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: .5rem .5rem;
+    border-radius: 25px;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  * {
+	flex-direction: column;
+  }
+}
