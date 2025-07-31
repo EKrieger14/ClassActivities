@@ -19,19 +19,19 @@ let favoriteThing;
 console.log(favoriteThing);
 // You heard a new song that became your favorite.
 // Reassign the variable "favoriteSong"
-favoriteThing
+favoriteSong = "Crazy Frog";
 // You no longer like the type of data stored in "favoriteThing"
 // Reassign "favoriteThing" to a different primitive data type and print its type
-
+favoriteThing = 42;
 // Happy Birthday!
 // Reassign "age" to a new value
-
+age = 33;
 // You got a big raise at work.
 // Reassign "wage" to a new value
-
+wage = 3000000;
 // Your raise changed your job satisfaction.
 // Assign "satisfied" to true
-
+satisfied = true;
 // use "console.log()" and "+" to print a sentence that includes two of the above variables
 console.log("My name is " + name + " and my favorite song is " + favoriteSong + ".");
 
