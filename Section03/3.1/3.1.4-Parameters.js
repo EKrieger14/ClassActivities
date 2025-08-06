@@ -2,7 +2,7 @@
 // write a function that takes two named parameters:
 // print each named parameter,
 // then return the parameters added together
-function twoParams(param1, param2){
+function twoParams(param1, param2) {
   console.log(param1, param2);
   return param1 + param2;
 }
@@ -23,7 +23,7 @@ twoParams(15);
 // returns NaN
 
 // change the function to set default values for the parameters
-function twoDefaultParams(param1 = 20, param2 = 5){
+function twoDefaultParams(param1 = 20, param2 = 5) {
   console.log(param1, param2);
   return param1 + param2;
 }
@@ -43,7 +43,7 @@ twoDefaultParams(30, 50);
 // Rest Operator
 // add a rest operator to the function's parameters
 // add a line to the function's body to print the value of the rest operator
-function twoDefaultParamsWithRestParam(param1 = 20, param2 = 5, ...lastParam){
+function twoDefaultParamsWithRestParam(param1 = 20, param2 = 5, ...lastParam) {
   console.log(param1, param2);
   console.log(lastParam);
   return param1 + param2;
